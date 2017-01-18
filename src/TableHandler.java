@@ -23,7 +23,7 @@ public class TableHandler<T extends PipelineInterface> {
      * @param deviceID The ID of the device for this to look for
      */
     TableHandler(String tableName, int deviceID) {
-        networkTable = NetworkTable.getTable(tableName);
+        //networkTable = NetworkTable.getTable(tableName);
         videoCapture = new VideoCapture(deviceID);
     }
 
@@ -35,7 +35,15 @@ public class TableHandler<T extends PipelineInterface> {
         videoCapture.grab();
         videoCapture.retrieve(frame);
         gripPipeline.process(frame);
-        Object o = gripPipeline.contentOutput();
+
+        Object output = gripPipeline.contentOutput();
+
+        try {
+            wait(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

@@ -14,3 +14,13 @@
 .idea/workspace.xml
 
 FRC Coprocessor Vision Networking.iml
+
+.idea/vcs.xml
+
+out/production/FRC Coprocessor Vision Networking/GripPipeline.class
+
+out/production/FRC Coprocessor Vision Networking/Main.class
+
+out/production/FRC Coprocessor Vision Networking/PipelineInterface.class
+
+out/production/FRC Coprocessor Vision Networking/TableHandler.class

@@ -1,5 +1,3 @@
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
-
 import java.util.Objects;
 
 public class Main {
@@ -11,11 +9,11 @@ public class Main {
                             "Required Arguments:\n" +
                             "\t-ip IP ADDRESS The ip address of the NetworkTable server\n" +
                             "\t-t NETWORK TABLE NAME or --tablename NETWORK TABLE NAME The name of the network table" +
-                            "to write to\n";
+                            " to write to\n";
         /* The IP address of the NetworkTable server */
-        String IPAddress = null;
+        String IPAddress = "10.39.26.2";
         /* The name of the network table */
-        String tableName = null;
+        String tableName = "yeah";
 
         for (int i = 0; i < args.length; ++i) {
 
@@ -40,7 +38,11 @@ public class Main {
             return;
         }
 
-        NetworkTable.setIPAddress(IPAddress);
+        //NetworkTable.setIPAddress(IPAddress);
+
+        TableHandler<GripPipeline> test = new TableHandler<>("yeah", 0);
+
+        test.updateTable();
 
     }
 }
