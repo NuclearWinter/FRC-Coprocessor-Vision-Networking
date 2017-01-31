@@ -1,3 +1,6 @@
+# Please Note:
+My team (3926) has decided to use python for this as it is easier for us to quickly get something working on our raspberry pi. I reccomend you do the same. For some help on getting started, see <a href="https://github.com/mparobotics/2017Season">our repository</a> here on Github. I still want to work on this for the future, but at least until the season is over I probably won't be commiting.
+
 # FRC-Coprocessor-Vision-Networking
 Program to send data to the roboRIO from a coprocessor running vision processing via NetworkTables. WIP
 
